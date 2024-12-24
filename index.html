@@ -1,79 +1,184 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Héctor Laria - Personal Page</title>
-    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
-
-        #header {
-            background-color: #0078d4;
-            color: #fff;
-            padding: 20px 0;
-        }
-
-        #profile-pic {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            border: 5px solid #fff;
-            margin: 0 auto;
-            display: block;
-        }
-
-        #name {
-            font-size: 24px;
-            font-weight: bold;
-        }
-
-        #job-title {
-            font-size: 18px;
-            color: #e0e0e0;
-        }
-
-        #short-description {
-            background-color: #fff;
-            padding: 20px;
-        }
-
-        #social-icons {
-            margin: 20px;
-        }
-
-        #social-icons a {
-            text-decoration: none;
-            color: #0078d4;
-            margin: 0 10px;
-            font-size: 24px;
-        }
-    </style>
+    <title>Héctor Laria</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="header">
-        <img id="profile-pic" src="photo.jpg" alt="Héctor Laria">
-        <div id="name">Héctor Laria</div>
-        <div id="job-title">PhD Student</div>
+    <div class="container">
+        <header>
+            <div class="name-section">
+                <h1 class="name">Héctor Laria</h1>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9z"></path>
+                    </svg>
+                    <svg class="sun-icon hidden" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="4"></circle>
+                        <path d="M12 2v2"></path>
+                        <path d="M12 20v2"></path>
+                        <path d="M5 5l1.5 1.5"></path>
+                        <path d="M17.5 17.5L19 19"></path>
+                        <path d="M2 12h2"></path>
+                        <path d="M20 12h2"></path>
+                        <path d="M5 19l1.5-1.5"></path>
+                        <path d="M17.5 6.5L19 5"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="profile-section">
+                <div class="profile-container">
+                    <img class="profile-image" src="photo.jpg" alt="Profile photo">
+                    <div class="social-links">
+                        <a target="_blank" href="https://linkedin.com/in/hector-laria" aria-label="LinkedIn" class="social-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect width="4" height="12" x="2" y="9"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                        <a target="_blank" href="mailto:hlaria@cvc.uab.cat" aria-label="Email" class="social-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                            </svg>
+                        </a>
+                        <a target="_blank" href="https://github.com/hecoding" aria-label="GitHub" class="social-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+                                <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                            </svg>
+                        </a>
+                        <a target="_blank" href="https://x.com/hector_laria" aria-label="Twitter" class="social-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
+                            </svg>
+                        </a>
+                        <a target="_blank" href="https://scholar.google.com/citations?user=oifXN6kAAAAJ" aria-label="Google Scholar" class="social-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"></path>
+                                <path d="M22 10v6"></path>
+                                <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
+                            </svg>
+                        </a>
+                        <a target="_blank" href="cv.pdf" aria-label="CV" class="social-link" title="CV">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <path d="M14 2v6h6"></path>
+                                <path d="M16 13H8"></path>
+                                <path d="M16 17H8"></path>
+                                <path d="M10 9H8"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bio-content">
+                    <p>
+                        I'm a PhD candidate in Computer Science at the Computer Vision Center in Barcelona focused on efficient Generative Models under data-constrained scenarios. 
+                        I'm supervised by <a target="_blank" href="https://scholar.google.com/citations?user=Gsw2iUEAAAAJ">Joost van de Weijer</a> and advised by <a target="_blank" href="https://scholar.google.com/citations?user=zdIW07oAAAAJ">Bogdan Raducanu</a>.
+                    </p>
+
+                    <p>
+                        Before joining CVC, I worked as a Project Employee at Aalto University's Extreme Classification Group and as a Research Assistant in their Content-Based Image and Information Retrieval Group.
+                    </p>
+
+                    <p>
+                        I have an MSc in Machine Learning, Data Science and AI with Honours distinction from Aalto University, and a BSc in Software Engineering from Complutense University, Madrid. I've also attended the Cambridge ELLIS Machine Learning Summer School at Cambridge University.
+                    </p>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="publications">
+                <h2>Publications</h2>
+                <div class="publication-list">
+                    <article class="publication">
+                        <div class="pub-thumbnail">
+                            <img src="paper-thumbs/diff-forgetting.png" alt="Paper thumbnail">
+                        </div>
+                        <div class="pub-content">
+                            <h3>Assessing Open-world Forgetting in Generative Image Model Customization</h3>
+                            <p class="authors">Héctor Laria, Alex Gomez-Villa, Imad Eddine Marouf, Kai Wang, Bogdan Raducanu, Joost van de Weijer</p>
+                            <p class="venue">Under review, 2024</p>
+                            <div class="pub-links">
+                                <a target="_blank" href="https://arxiv.org/abs/2410.14159" class="pub-button">ABS</a>
+                                <a target="_blank" href="https://arxiv.org/pdf/2410.14159" class="pub-button">PDF</a>
+                                <a target="_blank" href="https://hecoding.github.io/open-world-forgetting/" class="pub-button">PROJ</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="publication">
+                        <div class="pub-thumbnail">
+                            <img src="paper-thumbs/nerf-diff.png" alt="Paper thumbnail">
+                        </div>
+                        <div class="pub-content">
+                            <h3>NeRF-Diffusion for 3D-Consistent Face Generation and Editing</h3>
+                            <p class="authors">Héctor Laria, Kai Wang, Joost van de Weijer, Bogdan Raducanu, Yaxing Wang</p>
+                            <p class="venue">VISAPP 2024</p>
+                            <div class="pub-links">
+                                <a target="_blank" href="https://openreview.net/forum?id=wmV05MGLqF" class="pub-button">ABS</a>
+                                <a target="_blank" href="https://www.scitepress.org/publishedPapers/2024/123815/pdf/index.html" class="pub-button">PDF</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="publication">
+                        <div class="pub-thumbnail">
+                            <img src="paper-thumbs/hyper-mod.png" alt="Paper thumbnail">
+                        </div>
+                        <div class="pub-content">
+                            <h3>Transferring Unconditional to Conditional GANs with Hyper-Modulation</h3>
+                            <p class="authors">Héctor Laria, Yaxing Wang, Joost van de Weijer, Bogdan Raducanu</p>
+                            <p class="venue">CVPR 2022</p>
+                            <div class="pub-links">
+                                <a target="_blank" href="https://arxiv.org/abs/2112.02219" class="pub-button">ABS</a>
+                                <a target="_blank" href="https://openaccess.thecvf.com/content/CVPR2022W/CLVision/papers/Laria_Transferring_Unconditional_to_Conditional_GANs_With_Hyper-Modulation_CVPRW_2022_paper.pdf" class="pub-button">PDF</a>
+                                <a target="_blank" href="https://github.com/hecoding/Hyper-Modulation" class="pub-button">CODE</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="publication">
+                        <div class="pub-thumbnail">
+                            <img src="paper-thumbs/ti2i.png" alt="Paper thumbnail">
+                        </div>
+                        <div class="pub-content">
+                            <h3>TransferI2I: Transfer Learning for Image-to-Image Translation from Small Datasets</h3>
+                            <p class="authors">Yaxing Wang, Hector Laria Mantecon, Joost van de Weijer, Laura Lopez-Fuentes, Bogdan Raducanu</p>
+                            <p class="venue">ICCV 2021</p>
+                            <div class="pub-links">
+                                <a target="_blank" href="https://arxiv.org/abs/2105.06219" class="pub-button">ABS</a>
+                                <a target="_blank" href="https://arxiv.org/pdf/2105.06219" class="pub-button">PDF</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="publication">
+                        <div class="pub-thumbnail">
+                            <img src="paper-thumbs/pacman.png" alt="Paper thumbnail">
+                        </div>
+                        <div class="pub-content">
+                            <h3>A Pac-Man bot based on grammatical evolution</h3>
+                            <p class="authors">Héctor Laria Mantecón, Jorge Sánchez Cremades, José Miguel Tajuelo Garrigós, Jorge Vieira Luna, Carlos Cervigon Rückauer and Antonio A. Sánchez-Ruiz-Granados</p>
+                            <p class="venue">CoSECivi 2017</p>
+                            <div class="pub-links">
+                                <a target="_blank" href="https://ceur-ws.org/Vol-1957/CoSeCiVi17_paper_12.pdf" class="pub-button">PDF</a>
+                                <a target="_blank" href="https://hecoding.github.io/Pac-Man/" class="pub-button">PROJ</a>
+                                <a target="_blank" href="https://github.com/hecoding/Pac-Man" class="pub-button">CODE</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
     </div>
-    <div id="short-description">
-        <p>
-            I am a passionate student with a strong focus on Generative Models, particularly in the realms of GANs, Diffusion Models, and Neural Fields. My recent work has delved into Image Generation, Transfer Learning, and collaborative projects in Image-to-Image Translation. I always look forward to engaging with diverse perspectives and bouncing ideas off different minds.
-        </p>
-    </div>
-    <div id="social-icons">
-        <a href="cv.pdf" target="_blank"><i class="fa fa-file-pdf-o" title="CV"></i></a>
-        <a href="https://www.linkedin.com/in/hector-laria" target="_blank"><i class="fa fa-linkedin" title="LinkedIn"></i></a>
-        <a href="https://scholar.google.com/citations?user=oifXN6kAAAAJ" target="_blank"><i class="fa fa-graduation-cap" title="Google Scholar"></i></a>
-        <a href="https://github.com/hecoding" target="_blank"><i class="fa fa-github" title="GitHub"></i></a>
-        <a href="mailto:hlaria@cvc.uab.cat"><i class="fa fa-envelope" title="Email"></i></a>
-    </div>
+    <script src="theme.js"></script>
 
     <!-- stats -->
     <script type="text/javascript">
